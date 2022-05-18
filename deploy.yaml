@@ -1,0 +1,18 @@
+---
+  - name: Collect info about all VMs
+    hosts: all
+    tasks:
+      - setup:
+
+  - name: Setup users
+    hosts: all
+    become: yes
+    roles:
+      - users
+
+  - name: Install hugo
+    hosts: app_server
+    become: yes
+    roles:
+      - hugo
+      - nginx

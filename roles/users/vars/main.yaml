@@ -1,0 +1,9 @@
+
+---
+
+users:
+  -
+    name: erick
+    key:  https://github.com/erickhunter.keys
+    become: yes
+    become_method: "sudo"

@@ -1,0 +1,4 @@
+ErickHunter-1 ansible_host=65.108.208.177 ansible_port=22 ansible_ssh_user=root ansible_python_interpreter=python3
+
+[app_server]
+ErickHunter-1

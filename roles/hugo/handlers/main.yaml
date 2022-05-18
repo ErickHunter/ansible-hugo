@@ -1,0 +1,8 @@
+---
+  - name: Rebuild hugo
+    command:
+      cmd: hugo -D    # build hugo to ./public (-d/--destination flag to change it)
+      chdir: /opt/hugo/
+    ignore_errors: true
+    # register: comamnd_result
+    # failed_when: "'ERROR' in command_result.stderr"

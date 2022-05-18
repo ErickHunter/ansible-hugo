@@ -1,0 +1,19 @@
+---
+  - name: Nginx setup
+    apt:
+      pkg: nginx
+      state: present
+      update_cache: yes
+
+  - name: add config
+    template:
+      src: templates/hugo-photo.j2
+      dest: /etc/nginx/sites-available/default
+    notify: Restart nginx
+    tags:
+      - nginx-config        # -t nginx-config
+
+  - name: Make sure nginx is running
+    systemd:
+      service: nginx
+      state: started
