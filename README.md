@@ -1,2 +1,2 @@
-# ansible-FreeTAKServer
-A FreeTAKServer thing for fun.
+# ansible-hugo
+Playbook for deploying my hugo photoblog (https://github.com/ErickHunter/photo-gallery). 
